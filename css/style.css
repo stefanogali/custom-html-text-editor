@@ -1,0 +1,95 @@
+.popup {
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+	max-width:460px;
+	width:90%;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+	border-radius:3px;
+	background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#fff;
+}
+ 
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:rgba(0,0,0,1);
+	text-decoration:none;
+}
+
+#button-wrap-inner{
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	background: #34d9b0;
+	background-image: -webkit-linear-gradient(top, #34d9b0, #0a5380);
+	background-image: -moz-linear-gradient(top, #34d9b0, #0a5380);
+	background-image: -ms-linear-gradient(top, #34d9b0, #0a5380);
+	background-image: -o-linear-gradient(top, #34d9b0, #0a5380);
+	background-image: linear-gradient(to bottom, #34d9b0, #0a5380);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.btn:hover {
+	background: #34d9b0;
+	background-image: -webkit-linear-gradient(top, #34d9b0, #9dbfcc);
+	background-image: -moz-linear-gradient(top, #34d9b0, #9dbfcc);
+	background-image: -ms-linear-gradient(top, #34d9b0, #9dbfcc);
+	background-image: -o-linear-gradient(top, #34d9b0, #9dbfcc);
+	background-image: linear-gradient(to bottom, #34d9b0, #9dbfcc);
+	text-decoration: none;
+}
+
+.selected{
+	border: 1px solid red !important;
+	opacity: 1 !important;
+	display: block !important;
+}
+
+.red {
+	color: red;
+}
